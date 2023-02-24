@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="icon" href="./img/bot.jpg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper flex-shrink-0">
+        <nav class="navbar navbar-expand-lg p-4">
+            <div class="container">
+              <a class="navbar-brand" href="#">KIRILLWXMX</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-center w-100">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Project</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Roadmap</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#footer">Contacts</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+        <div class="container d-flex align-items-center justify-content-center p-5">
+            <div class="circle-main">
+                <img src="./img/macbook.png" alt="">
+                <img src="./img/person.png" class="person" alt="">
+            </div>
+        </div>
+        <div class="container pt-5 pb-5" id="about">
+            <p class="fs-1 fw-bold title text-white text-uppercase text-center pb-5">About</p>
+            <div class="row w-100">
+                <div class="col-md-6 pt-5 pb-5">
+                    <p class="fs-4 fw-normal text-white">Меня зовут <span>Кирилл</span>, мне <span>17</span> лет. Занимаюсь разработкой Web сайтов около <span>года</span>. Также имеется опыт в разработке <span>мобильных приложений</span> на базовом уровне, изучал около <span>месяца</span>. Имеется опыт в <span>Backend</span> разработке, а именно разработка <span>бота VK</span>, и небольшое <span>Fullstack</span> приложение для колледжа</p>
+                </div>
+                <div class="col-md-6 pt-5 pb-5">
+                    <div class="progress mt-3 mb-3">
+                        <span>HTML | 90%</span>
+                        <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="progress mt-3 mb-3">
+                        <span>CSS | 90%</span>
+                        <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="progress mt-3 mb-3">
+                        <span>WordPress | 70%</span>
+                        <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="progress mt-3 mb-3">
+                        <span>JS | 40%</span>
+                        <div class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="progress mt-3 mb-3">
+                        <span>React JS | 30%</span>
+                        <div class="progress-bar" role="progressbar" style="width: 30%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="progress mt-3 mb-3">
+                        <span>Vue JS | 10%</span>
+                        <div class="progress-bar" role="progressbar" style="width: 10%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="progress mt-3 mb-3">
+                        <span>Node JS | 5%</span>
+                        <div class="progress-bar" role="progressbar" style="width: 5%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container pt-5 pb-5" id="portfolio">
+          <p class="fs-1 fw-bold title text-white text-uppercase text-center pb-5">Portfolio</p>
+          <div class="row pt-5 pb-3 w-100 d-flex justify-content-center">
+            <div class="col-md-2 d-flex justify-content-center">
+              <button class="btn btn_" data-filter="layout gulp react-js node wp php react-native">Всё</button>
+            </div>
+            <div class="col-md-2 d-flex justify-content-center">
+              <button class="btn btn_" data-filter="layout">Вёрстка</button>
+            </div>
+            <div class="col-md-2 d-flex justify-content-center">
+              <button class="btn btn_" data-filter="gulp">Gulp</button>
+            </div>
+            <div class="col-md-2 d-flex justify-content-center">
+              <button class="btn btn_" data-filter="react-js">React JS</button>
+            </div>
+            <div class="col-md-2 d-flex justify-content-center">
+              <button class="btn btn_" data-filter="node">Node JS</button>
+            </div>
+            <div class="col-md-2 d-flex justify-content-center">
+              <button class="btn btn_" data-filter="wp">WordPress</button>
+            </div>
+            <div class="col-md-2 d-flex justify-content-center">
+              <button class="btn btn_" data-filter="php">PHP</button>
+            </div>
+            <div class="col-md-2 d-flex justify-content-center">
+              <button class="btn btn_" data-filter="react-native">React Native</button>
+            </div>
+          </div>
+          <ul class="row w-100 contents pt-5 pb-5 d-flex justify-content-center">
+            <li class="col-md-3 mx-2 mb-3 p-3 wp">
+              <div class="content pt-5">
+                <p class="content-title fs-4 fw-bold">Магазин Семена</p>
+                <div class="d-flex align-items-center flex-column">
+                  <button class="btn" onclick="location.href='https://semenadv.ru';">Посмотреть</button>
+                  <a href="https://github.com/KIBERKICA/semena.store-WordPress" class="nav-link pt-3">
+                    <i class="fa-brands fa-github fs-4"></i>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="col-md-3 mx-2 mb-3 p-3 layout">
+              <div class="content pt-5">
+                <p class="content-title fs-4 fw-bold">Panda Bot</p>
+                <div class="d-flex justify-content-center">
+                  <button class="btn" onclick="location.href='./Panda/index.html';">Посмотреть</button>
+                </div>
+              </div>
+            </li>
+            <li class="col-md-3 mx-2 mb-3 p- layout">
+              <div class="content pt-5">
+                <p class="content-title fs-4 fw-bold">Generate Hex</p>
+                <div class="d-flex justify-content-center">
+                  <button class="btn" onclick="location.href='./Hex/index.html';">Посмотреть</button>
+                </div>
+              </div>
+            </li>
+            <li class="col-md-3 mx-2 mb-3 p- layout">
+              <div class="content pt-5">
+                <p class="content-title fs-4 fw-bold">Dashboard</p>
+                <div class="d-flex align-items-center flex-column">
+                  <button class="btn" onclick="location.href='./Dashboard/index.html';">Посмотреть</button>
+                  <a href="https://github.com/KIBERKICA/Admin-Dashboard" class="nav-link pt-3">
+                    <i class="fa-brands fa-github fs-4"></i>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="col-md-3 mx-2 mb-3 p- php">
+              <div class="content pt-5">
+                <p class="content-title fs-4 fw-bold">VHelp</p>
+                <div class="d-flex justify-content-center">
+                  <button class="btn" onclick="location.href='https://github.com/KIBERKICA/VHelp-VK-API';">Посмотреть</button>
+                </div>
+              </div>
+            </li>
+            <li class="col-md-3 mx-2 mb-3 p-3 gulp">
+              <div class="content pt-5">
+                <p class="content-title fs-4 fw-bold">Marico</p>
+                <div class="d-flex align-items-center flex-column">
+                  <button class="btn" onclick="location.href='./Marico/index.html';">Посмотреть</button>
+                  <a href="https://github.com/KIBERKICA/Marico-Gulp" class="nav-link pt-3">
+                    <i class="fa-brands fa-github fs-4"></i>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="col-md-3 mx-2 mb-3 p-3 gulp">
+              <div class="content pt-5">
+                <p class="content-title fs-4 fw-bold">GLO</p>
+                <div class="d-flex align-items-center flex-column">
+                  <button class="btn" onclick="location.href='./GLO/index.html';">Посмотреть</button>
+                  <a href="https://github.com/KIBERKICA/GLO-Academy-Gulp" class="nav-link pt-3">
+                    <i class="fa-brands fa-github fs-4"></i>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="col-md-3 mx-2 mb-3 p-3 wp">
+              <div class="content pt-5">
+                <p class="content-title fs-4 fw-bold">Arizona Helper</p>
+                <div class="d-flex align-items-center flex-column">
+                  <button class="btn" onclick="location.href='./GLO/index.html';">Посмотреть</button>
+                  <a href="https://github.com/KIBERKICA/ArzHelper-Wordpress" class="nav-link pt-3">
+                    <i class="fa-brands fa-github fs-4"></i>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="col-md-3 mx-2 mb-3 p-3 react-native">
+              <div class="content pt-5">
+                <p class="content-title fs-4 fw-bold">To Do Mobile</p>
+                <div class="d-flex align-items-center flex-column">
+                  <button class="btn" onclick="location.href='./GLO/index.html';">Посмотреть</button>
+                  <a href="https://github.com/KIBERKICA/To-Do-MobileApp" class="nav-link pt-3">
+                    <i class="fa-brands fa-github fs-4"></i>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="col-md-3 mx-2 mb-3 p-3 layout">
+              <div class="content pt-5">
+                <p class="content-title fs-4 fw-bold">Portoflio</p>
+                <div class="d-flex align-items-center flex-column">
+                  <button class="btn" onclick="location.href='./Portfolio/index.html';">Посмотреть</button>
+                  <a href="https://github.com/KIBERKICA/Portfolio" class="nav-link pt-3">
+                    <i class="fa-brands fa-github fs-4"></i>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="col-md-3 mx-2 mb-3 p-3 react-js">
+              <div class="content pt-5">
+                <p class="content-title fs-4 fw-bold">HyperDrop</p>
+                <div class="d-flex align-items-center flex-column">
+                  <button class="btn" onclick="location.href='./Portfolio/index.html';">Посмотреть</button>
+                  <a href="https://github.com/KIBERKICA/React-Hypedrop" class="nav-link pt-3">
+                    <i class="fa-brands fa-github fs-4"></i>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="col-md-3 mx-2 mb-3 p-3 react-js">
+              <div class="content pt-5">
+                <p class="content-title fs-4 fw-bold">Quest</p>
+                <div class="d-flex align-items-center flex-column">
+                  <button class="btn" onclick="location.href='./Portfolio/index.html';">Посмотреть</button>
+                  <a href="https://github.com/KIBERKICA/React-Quest" class="nav-link pt-3">
+                    <i class="fa-brands fa-github fs-4"></i>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="col-md-3 mx-2 mb-3 p-3 node">
+              <div class="content pt-5">
+                <p class="content-title fs-4 fw-bold">Чат бот VK</p>
+                <div class="d-flex align-items-center flex-column">
+                  <button class="btn" onclick="location.href='https://vk.com/husky_bot_vk';">Посмотреть</button>
+                </div>
+              </div>
+            </li>
+          </ul>
+      </div>
+        <div class="container pt-5 pb-5" id="footer">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center pt-5 border-top">
+              <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                  <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+                </a>
+                <span class="navbar-brand">© 2023 - KIRILLWXMX</span>
+              </div>
+          
+              <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <a href="https://github.com/KIBERKICA" class="nav-link pt-3">
+                  <i class="fa-brands fa-github fs-4"></i>
+                </a>
+                <a href="https://vk.com/kirillwxmx" class="nav-link pt-3">
+                  <i class="fa-brands fa-vk fs-4"></i>
+                </a>
+              </ul>
+            </footer>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a3e3eec57d.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="ru">
+<head>
+      <meta charset="UTF-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+      <link rel="stylesheet" href="./css//style.css"/>
+      <link rel="icon" href="./img/logo.png" type="image/png"/>
+      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+      <title>Panda Bot</title>
+</head>
+<body>
+    <div class="page-cover"></div>
+        <div class="wrapper">
+            <div class="card card__responsive">
+              <div class="management-table-navigation-bar">
+                <div class="search-box ">
+                    <input class="search-box__input" autocomplete="off" type="text" placeholder="Поиск">
+                
+                    <div class="search-box__controls">
+                        <div class="search-box__submit"><i class="fa fa-search"></i></div>
+                    </div>
+                </div>
+              </div>
+                <div class="management-table__responsive">
+                    <main class="main">
+                      <aside class="sidebar">
+                        <div class="user_card">
+                          <!-- нужно менять --round-color, чтобы цвет кружка менялся -->
+                          <h2 class="user_card__title" style="--round-color: #3cc617">
+                            Dorrian_Beer
+                            <span class="user_card__title--id card">ID: 213</span>
+                          </h2>
+                
+                          <div class="user_card__wrapper">
+                            <div class="user_card-column">
+                              <div class="user_card-column__plate card ARMED_SLOT_HAT">
+                                <img
+                                  src="./images/user_item.png"
+                                  alt="user_item"
+                                  class="user_card-column__image"
+                                />
+                                <span class="user_card-column__id card">ID: 212</span>
+                              </div>
+                              <div class="user_card-column__plate card ARMED_SLOT_GLASSES">
+                                <img
+                                  src="./images/user_item.png"
+                                  alt="user_item"
+                                  class="user_card-column__image"
+                                />
+                                <span class="user_card-column__id card">ID: 212</span>
+                              </div>
+                              <div class="user_card-column__plate card ARMED_SLOT_FACE">
+                                <img
+                                  src="./images/user_item.png"
+                                  alt="user_item"
+                                  class="user_card-column__image"
+                                />
+                                <span class="user_card-column__id card">ID: 212</span>
+                              </div>
+                              <div class="user_card-column__plate card ARMED_SLOT_SPINE">
+                                <img
+                                  src="./images/user_item.png"
+                                  alt="user_item"
+                                  class="user_card-column__image"
+                                />
+                                <span class="user_card-column__id card">ID: 212</span>
+                              </div>
+                            </div>
+                            <img src="./images/skin.png" alt="skin" class="user_card__skin" />
+                            <div class="user_card__column">
+                              <div class="user_card-column__plate card ARMED_SLOT_TORSO">
+                                <img
+                                  src="./images/user_item.png"
+                                  alt="user_item"
+                                  class="user_card-column__image"
+                                />
+                                <span class="user_card-column__id card">ID: 212</span>
+                              </div>
+                              <div class="user_card-column__plate card ARMED_SLOT_HAND">
+                                <img
+                                  src="./images/user_item.png"
+                                  alt="user_item"
+                                  class="user_card-column__image"
+                                />
+                                <span class="user_card-column__id card">ID: 212</span>
+                              </div>
+                              <div class="user_card-column__plate card ARMED_SLOT_LEGS">
+                                <img
+                                  src="./images/user_item.png"
+                                  alt="user_item"
+                                  class="user_card-column__image"
+                                />
+                                <span class="user_card-column__id card">ID: 212</span>
+                              </div>
+                              <div class="user_card-column__plate card ARMED_SLOT_FEET">
+                                <img
+                                  src="./images/user_item.png"
+                                  alt="user_item"
+                                  class="user_card-column__image"
+                                />
+                                <span class="user_card-column__id card">ID: 212</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="sidebar__box">
+                          <ul class="sidebar-list card">
+                            <li class="sidebar-list__item">
+                              <span class="sidebar-list__option">Уровень администрирования</span>
+                              <span class="sidebar-list__option">1</span>
+                            </li>
+                            <li class="sidebar-list__item">
+                              <span class="sidebar-list__option">Количество сессий</span>
+                              <span class="sidebar-list__option">1</span>
+                            </li>
+                            <li class="sidebar-list__item">
+                              <span class="sidebar-list__option">Ответов за неделю</span>
+                              <span class="sidebar-list__option">1</span>
+                            </li>
+                            <li class="sidebar-list__item">
+                              <span class="sidebar-list__option">Ответов за всё время</span>
+                              <span class="sidebar-list__option">1</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </aside>
+                      <section class="container">
+                        <div class="row">
+                          <div class="card main-level row">
+                            <div class="main-level__wrapper">
+                              <svg
+                                version="1.1"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                viewBox="0 0 104 104"
+                                class="main-level__svg"
+                              >
+                                <!--вот эта штука делает кружок
+                                     stroke-dasharray="180 157" первое число - сколько зполнять цветом, второе - сколько пустотой-->
+                                <circle
+                                  cx="52"
+                                  cy="52"
+                                  r="46"
+                                  stroke="#eb9f56"
+                                  stroke-width="3"
+                                  stroke-dasharray="60 300"
+                                  stroke-dashoffset="142.5"
+                                  fill="none"
+                                  class="main-level__circle circle"
+                                />
+                              </svg>
+                              <p class="main-level__numbers">
+                                <span class="main-level__number">999</span>
+                                <span class="main-level__number">999/999</span>
+                              </p>
+                            </div>
+                            <p class="main-level__description">
+                              Осталось 186 часов до нового уровня
+                            </p>
+                          </div>
+                          <div class="main-records card row">
+                            <div class="main-records__record">
+                              <h4 class="record__title">Дата регистрации</h4>
+                              <h2 class="record__bold">08.06.2017</h2>
+                              <span class="record__text">18:54:21</span>
+                            </div>
+                            <div class="main-records__record">
+                              <h4 class="record__title">Последний вход</h4>
+                              <h2 class="record__bold">08.06.2017</h2>
+                              <span class="record__text">12:32:53</span>
+                            </div>
+                            <div class="main-records__record">
+                              <h4 class="record__title">Статус E-Mail</h4>
+                              <h2
+                                class="record__bold success"
+                                style="font-weight: 700; font-size: 1.0417vw"
+                              >
+                                Подтвержден
+                              </h2>
+                              <span class="record__text wrong" style="font-size: 0.73vw"
+                                >Выключено при смене IP</span
+                              >
+                            </div>
+                            <div class="main-records__record">
+                              <h4 class="record__title">Статус 2-FA</h4>
+                              <h2
+                                class="record__bold wrong"
+                                style="font-weight: 700; font-size: 1.0417vw"
+                              >
+                                Не подключен
+                              </h2>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row" style="margin-top: 2.5vw">
+                          <ul class="main-list card">
+                            <p class="main-list__title">Статистика за сутки</p>
+                            <li class="main-list__item" style="padding-top: 1.302vw;">
+                              <span class="main-list__option">Выдано блокировок чата</span>
+                              <span class="main-list__option">51</span>
+                            </li>
+                            <li class="main-list__item">
+                              <span class="main-list__option">Выдано предупреждений</span>
+                              <span class="main-list__option">51</span>
+                            </li>
+                            <li class="main-list__item">
+                              <span class="main-list__option">Выдано киков</span>
+                              <span class="main-list__option">51</span>
+                            </li>
+                            <li class="main-list__item">
+                              <span class="main-list__option">Выдано ТСР</span>
+                              <span class="main-list__option">51</span>
+                            </li>
+                            <li class="main-list__item">
+                              <span class="main-list__option">Выдано блокировок</span>
+                              <span class="main-list__option">51</span>
+                            </li>
+                          </ul>
+                          <ul class="main-list card">
+                            <p class="main-list__title">Статистика за неделю</p>
+                            <li class="main-list__item" style="padding-top: 1.302vw;">
+                              <span class="main-list__option">Выдано блокировок чата</span>
+                              <span class="main-list__option">51</span>
+                            </li>
+                            <li class="main-list__item">
+                              <span class="main-list__option">Выдано предупреждений</span>
+                              <span class="main-list__option">51</span>
+                            </li>
+                            <li class="main-list__item">
+                              <span class="main-list__option">Выдано киков</span>
+                              <span class="main-list__option">51</span>
+                            </li>
+                            <li class="main-list__item">
+                              <span class="main-list__option">Выдано ТСР</span>
+                              <span class="main-list__option">51</span>
+                            </li>
+                            <li class="main-list__item">
+                              <span class="main-list__option">Выдано блокировок</span>
+                              <span class="main-list__option">51</span>
+                            </li>
+                          </ul>
+                          <ul class="main-list card">
+                            <li class="main-list__item online">
+                              <span class="main-list__option">
+                                <p class="online-count">3 час (а), 15 минут</p>
+                                <svg
+                                  version="1.1"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                                  viewBox="0 0 104 104"
+                                  class="main-level__svg"
+                                >
+                                <!--вот эта штука делает кружок
+                                     stroke-dasharray="180 157" первое число - сколько зполнять цветом, второе - сколько пустотой-->
+                                  <circle
+                                    cx="52"
+                                    cy="52"
+                                    r="46"
+                                    stroke="#BDFF00"
+                                    stroke-width="3"
+                                    stroke-dasharray="213 147"
+                                    stroke-dashoffset="142.5"
+                                    fill="none"
+                                    class="main-level__circle circle-yellow"
+                                  />
+                                  <text class="online-count" x="50%" y="50%" text-anchor="middle" stroke="#fff">100%</text>
+                                </svg>
+                                <p class="online-title">Онлайн за сутки</p>
+                              </span>
+                              <span class="main-list__option">
+                                <p class="online-count">3 час (а), 15 минут</p>
+                                <div class="online-progress">
+                                  <svg
+                                    version="1.1"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    viewBox="0 0 104 104"
+                                    class="main-level__svg"
+                                  >
+                                <!--вот эта штука делает кружок
+                                     stroke-dasharray="180 157" первое число - сколько зполнять цветом, второе - сколько пустотой-->
+                                    <circle
+                                      cx="52"
+                                      cy="52"
+                                      r="46"
+                                      stroke="#0075FF"
+                                      stroke-width="3"
+                                      stroke-dasharray="500 157"
+                                      stroke-dashoffset="142.5"
+                                      fill="none"
+                                      class="main-level__circle circle-blue"
+                                    />
+                                    <text class="online-count" x="50%" y="50%" text-anchor="middle" stroke="#fff">100%</text>
+                                    </svg>
+                                </div>
+                                <p class="online-title">Онлайн за неделю</p>
+                              </span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="row" style="margin-top: 2.5vw">
+                          <ul class="main-list card">
+                            <p class="main-list__title">Статистика за месяц</p>
+                            <li class="main-list__item" style="padding-top: 1.302vw;">
+                              <span class="main-list__option">Выдано блокировок чата</span>
+                              <span class="main-list__option">51</span>
+                            </li>
+                            <li class="main-list__item">
+                              <span class="main-list__option">Выдано предупреждений</span>
+                              <span class="main-list__option">51</span>
+                            </li>
+                            <li class="main-list__item">
+                              <span class="main-list__option">Выдано киков</span>
+                              <span class="main-list__option">51</span>
+                            </li>
+                            <li class="main-list__item">
+                              <span class="main-list__option">Выдано ТСР</span>
+                              <span class="main-list__option">51</span>
+                            </li>
+                            <li class="main-list__item">
+                              <span class="main-list__option">Выдано блокировок</span>
+                              <span class="main-list__option">51</span>
+                            </li>
+                          </ul>
+                          <ul class="main-list card">
+                            <p class="main-list__title">Статистика за всё время</p>
+                            <li class="main-list__item" style="padding-top: 1.302vw;">
+                              <span class="main-list__option">Выдано блокировок чата</span>
+                              <span class="main-list__option">51</span>
+                            </li>
+                            <li class="main-list__item">
+                              <span class="main-list__option">Выдано предупреждений</span>
+                              <span class="main-list__option">51</span>
+                            </li>
+                            <li class="main-list__item">
+                              <span class="main-list__option">Выдано киков</span>
+                              <span class="main-list__option">51</span>
+                            </li>
+                            <li class="main-list__item">
+                              <span class="main-list__option">Выдано ТСР</span>
+                              <span class="main-list__option">51</span>
+                            </li>
+                            <li class="main-list__item">
+                              <span class="main-list__option">Выдано блокировок</span>
+                              <span class="main-list__option">51</span>
+                            </li>
+                          </ul>
+                          <ul class="main-list card" style="align-self: flex-start;">
+                            <li class="main-list__item online">
+                              <span class="main-list__option">
+                                <p class="online-count">3 час (а), 15 минут</p>
+                                <svg
+                                  version="1.1"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                                  viewBox="0 0 104 104"
+                                  class="main-level__svg"
+                                >
+                                <!--вот эта штука делает кружок
+                                     stroke-dasharray="180 157" первое число - сколько зполнять цветом, второе - сколько пустотой-->
+                                  <circle
+                                    cx="52"
+                                    cy="52"
+                                    r="46"
+                                    stroke="#FF9900"
+                                    stroke-width="3"
+                                    stroke-dasharray="340 20"
+                                    stroke-dashoffset="142.5"
+                                    fill="none"
+                                    class="main-level__circle circle-orange"
+                                  />
+                                  <text class="online-count" x="50%" y="50%" text-anchor="middle" stroke="#fff">100%</text>
+                                </svg>
+                                <p class="online-title">Онлайн за сутки</p>
+                              </span>
+                              <span class="main-list__option" style="padding-top: 30px;">
+                                <div class="online-progress">
+                                  <svg
+                                    version="1.1"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    viewBox="0 0 104 104"
+                                    class="main-level__svg"
+                                  >
+                                <!--вот эта штука делает кружок
+                                     stroke-dasharray="180 157" первое число - сколько зполнять цветом, второе - сколько пустотой-->
+                                    <circle
+                                      cx="52"
+                                      cy="52"
+                                      r="46"
+                                      stroke="#FF4D00"
+                                      stroke-width="3"
+                                      stroke-dasharray="310 50"
+                                      stroke-dashoffset="142.5"
+                                      fill="none"
+                                      class="main-level__circle circle-red"
+                                    />
+                                    <text class="online-count" x="50%" y="50%" text-anchor="middle" stroke="#fff">100%</text>
+                                    </svg>
+                                </div>
+                                <p class="online-title">Ответов за неделю</p>
+                              </span>
+                            </li>
+                          </ul>
+                        </div>
+                      </section>
+                    </main>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</html>
