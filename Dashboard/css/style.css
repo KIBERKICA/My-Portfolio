@@ -1,0 +1,103 @@
+@font-face {
+  font-family: "Helvetica";
+  src: url("../Fonts/AG_Helvetica.eot");
+  src: url("../Fonts/AG_Helvetica.eot?#iefix") format("embedded-opentype"), url("../Fonts/AG_Helvetica.woff2") format("woff2"), url("../Fonts/AG_Helvetica.woff") format("woff"), url("../Fonts/AG_Helvetica.ttf") format("truetype"), url("../Fonts/AG_Helvetica.svg#AG_Helvetica") format("svg");
+}
+@font-face {
+  font-family: "PingFang SC";
+  src: url("../Fonts/PingFang SC Regular.eot");
+  src: url("../Fonts/PingFang SC Regular.eot?#iefix") format("embedded-opentype"), url("../Fonts/PingFang SC Regular.woff2") format("woff2"), url("../Fonts/PingFang SC Regular.woff") format("woff"), url("../Fonts/PingFang SC Regular.ttf") format("truetype"), url("../Fonts/PingFang SC Regular.svg#AG_Helvetica") format("svg");
+}
+:root {
+  --color-left-bar: #131722;
+  --color-gray-unactive: #B6B6B6;
+}
+
+.gray {
+  color: var(--color-gray-unactive);
+}
+
+.unactive {
+  padding-top: 5px;
+}
+
+.left-bar {
+  background-color: var(--color-left-bar);
+  margin-left: -12px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.wallet {
+  width: 50px;
+  height: 50px;
+  background-color: #D9D9D9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.navbar-top {
+  border-bottom: 1px solid #383838;
+  width: 100%;
+}
+
+.fa-wallet {
+  color: #00186B;
+  font-size: 25px;
+}
+
+.form {
+  position: relative;
+}
+
+.form .fa-search {
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  color: #9ca3af;
+}
+
+.form-input {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 35px;
+  text-indent: 33px;
+  border-radius: 10px;
+  background-color: #090C13;
+}
+.form-input:focus {
+  box-shadow: none;
+  border: none;
+}
+
+.btn {
+  background-color: #007AFF;
+  width: 90%;
+  height: 40px;
+  color: #fff;
+  margin-left: 10px;
+}
+
+.active {
+  height: 5px;
+  width: 60%;
+  background-color: #007AFF;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.wrapper {
+  display: block;
+  border-radius: 10px;
+  border: 2px solid #232323;
+  position: relative;
+  margin-left: -10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#c {
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */

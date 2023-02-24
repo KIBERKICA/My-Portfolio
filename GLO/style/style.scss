@@ -1,0 +1,22 @@
+$main-color: #20202D;
+$nav-link: #707070;
+$nav-active: #326DF9;
+$price: #131313;
+
+.wrapper {
+    width: 100%;
+    min-height: 100vh;
+    background: $main-color;
+
+    font-family: 'Roboto', sans-serif;
+    
+    font-weight: 400;
+    .container {
+        .rounded-person {
+            img {
+                border-radius: 50%;
+                border: 10px solid white;
+            }
+        }
+    }
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Bootstrap -->
+
+    <!-- CSS only -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!-- JavaScript Bundle with Popper -->
+
+    <script src="https://kit.fontawesome.com/ddef9bcd35.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+    <title>Admin Dashboard</title>
+</head>
+<body>
+  <div class="container-fluid d-flex flex-column flex-md-row" style="background-color: #090C13;">
+    <nav class="navbar navbar-expand-md navbar-light d-flex flex-md-column left-bar" style="font-family: PingFang SC;">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse w-100" id="navbarSupportedContent" style="padding-left: 20px; padding-right: 20px;">
+          <ul class="navbar-nav w-100 d-flex flex-md-column text-center text-md-end">
+            <div class="w-100 d-flex px-5 navbar-top" style="margin-top: 70px;" > 
+              <div class="wallet">
+                  <i class="fa-solid fa-wallet"></i>
+              </div>
+              <div class="d-flex flex-column">
+                  <p style="color: #8A8A8A;">Wallet Balance</p>
+                  <p class="text-white">₦230,000,000.00</p>
+              </div>
+          </div>
+          <div class="form">
+              <i class="fa fa-search"></i>
+              <input type="text" style="background-color: #090C13; border: none; border-bottom: 2px solid #B5BDC9;" class="form-control form-input" placeholder="Search">
+              <i class="fa-solid fa-chart-pie-simple"></i>
+            </div>
+            <a class="btn text-white" style="background-color: #007AFF;" href="#" role="button">Dashboard</a>
+            <a class="btn text-white mt-3" style="background-color: #007AFF;" href="#" role="button">Orders</a>
+            <a class="btn text-white mt-3" style="background-color: #007AFF;" href="#" role="button">Wallet</a>
+            <a class="btn text-white mt-3" style="background-color: #007AFF;" href="#" role="button">Message</a>
+            <a class="btn text-white mt-3" style="background-color: #007AFF;" href="#" role="button">Inbox</a>
+            <a class="btn text-white mt-3" style="background-color: #007AFF;" href="#" role="button">News</a>
+            <a class="btn text-white mt-3 mb-5" style="background-color: #007AFF;" href="#" role="button">Settings</a>
+            <p class="text-white mt-5" href="#" role="button">Developed by <a class="btn" href="https://vk.com/kirillwxmx">KIRILLWXMX</a></p>
+            <a class="btn text-white mt-5" href="#" role="button">Log Out</a>
+          </ul>            
+        </div>
+    </nav>
+    <main class="ps-0 ps-md-5 flex-grow-1" style="font-family: Helvetica;">
+      <div class="text-wrap" style="border-bottom: 2px solid #232323;">
+        <h1 class="fs-1 fw-bold text-white pt-5">Dashboard</h1>
+      </div>
+      <div class="row align-items-start" style="border-bottom: 2px solid #232323;">
+        <div class="col-md-3 text-wrap" style="cursor: pointer;">
+          <p class="fs-3" style="color: #007AFF;">Transactions</p>
+          <div class="active"></div>
+        </div>
+        <div class="col-md-3 text-wrap" style="cursor: pointer;">
+          <p class="fs-3 gray unactive">Terminals</p>
+        </div>
+        <div class="col-md-3 text-wrap" style="cursor: pointer;">
+          <p class="fs-3 gray unactive">Agents</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8" >
+          <div class="row align-items-center w-100 mt-5 pt-3" style="border: 2px solid #232323; border-radius: 10px;">
+            <div class="col-md-3 text-wrap text-center d-flex justify-content-center align-items-center flex-column">
+              <p class="fs-4 gray">Users</p>
+              <p class="fs-2 text-white">2,765</p>
+              <p class="fs-5 text-success">%10</p>
+            </div>
+            <div class="col-md-3 text-wrap text-center d-flex justify-content-center align-items-center flex-column">
+              <p class="fs-4 gray">New</p>
+              <p class="fs-2 text-white">253</p>
+              <p class="fs-5 text-danger">%10</p>
+            </div>
+            <div class="col-md-3 text-wrap text-center d-flex justify-content-center align-items-center flex-column">
+              <p class="fs-4 gray">Average</p>
+              <p class="fs-2 text-white">896</p>
+              <p class="fs-5 text-success">%10</p>
+            </div>
+            <div class="col-md-3 text-wrap text-center d-flex justify-content-center align-items-center flex-column">
+              <p class="fs-4 gray">Total</p>
+              <p class="fs-2 text-white">253</p>
+              <p class="fs-5 text-danger">%10</p>
+            </div>
+          </div>
+          <div class="wrapper w-100">
+            <canvas id='c'></canvas>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex justify-content-center" style="border-left: 2px solid #232323; height: 100vh; padding-top: 100px;">
+          <div class="d-flex flex-column align-items-center">
+            <i class="fa-solid fa-wallet" style="font-size: 60px;"></i>
+          <p class="fs-6">Referal commissioin balance</p>
+          <p class="fs-4 fw-bold text-white">N120,000,000</p>
+          <a class="btn text-white mt-2" style="background-color: #007AFF;" href="#" role="button">Withdraw</a>
+          <p class="fs-6 pt-2" style="color: #00186B;">View commission history</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="./js/main.js"></script>
+</body>
+</html>
