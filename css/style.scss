@@ -1,12 +1,6 @@
-body {
-    overflow: overlay;
-    &::-webkit-scrollbar {
-    width: 4px;
-    }
-    &::-webkit-scrollbar-thumb {
-    background-color: #FF003D;
-    border-radius: 20px;
-    }
+:root {
+    --light: #d8dbe0;
+    --dark: #28292c;
 }
 
 @keyframes link {
@@ -18,219 +12,249 @@ body {
     }
 }
 
-.wrapper {
+.wrapper-light {
+    background: #fff;
+    color: #000;
+    a {
+        color: #000;
+    }
+}
+
+body {
+    overflow: overlay;
     width: 100%;
     min-height: 100vh;
-    background: #000;
-    .navbar {
-        font-family: 'Poppins', sans-serif;
-        font-weight: bold;
-        .container {
-            a {
-                color: #fff;
-                text-align: center;
-                text-transform: uppercase;
-                letter-spacing: 4px;
-                transition: all 500ms ease;
-                position: relative;
-                &:hover {
+    background-color: #000;
+    color: #fff;
+    a {
+        color: #fff;
+    }
+    &::-webkit-scrollbar {
+        width: 4px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: #FF003D;
+        border-radius: 20px;
+    }
+    .wrapper {
+        .navbar {
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;
+            .container {
+                a {
+                    text-align: center;
+                    text-transform: uppercase;
+                    letter-spacing: 4px;
+                    transition: all 500ms ease;
+                    position: relative;
+                    &:hover {
+                        color: #FF003D;
+                        transform: scale(1.1);
+                        &::after {
+                            content: '';
+                            animation-name: link;
+                            animation-duration: 800ms;
+                            animation-fill-mode: forwards;
+                            height: 2px;
+                            background-color: #FF003D;
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                        }
+                    }
+                }
+                .navbar-brand {
                     color: #FF003D;
-                    transform: scale(1.1);
-                    &::after {
-                        content: '';
-                        animation-name: link;
-                        animation-duration: 800ms;
-                        animation-fill-mode: forwards;
-                        height: 2px;
-                        background-color: #FF003D;
-                        position: absolute;
-                        bottom: 0;
-                        left: 0;
+                }
+                ul {
+                    li {
+                        margin-left: 10px;
+                        margin-right: 10px;
+                    }
+                }
+                form {
+                    img {
+                        cursor: pointer;
+                        transition: all 500ms ease;
+                        &:hover {
+                            transform: scale(1.1);
+                        }
                     }
                 }
             }
-            .navbar-brand {
-                color: #FF003D;
-            }
-            ul {
-                li {
-                    margin-left: 10px;
-                    margin-right: 10px;
-                }
-            }
         }
-    }
-    .container {
-        .circle-main {
-            width: 500px;
-            height: 500px;
-            border-radius: 50%;
-            border: 17px solid #E40037;
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            &::before {
-                content: '';
+        .container {
+            .circle-main {
                 width: 500px;
                 height: 500px;
                 border-radius: 50%;
-                position: absolute;
-                filter: blur(30px);
                 border: 17px solid #E40037;
-            }
-            img {
-                width: 80%;
-            }
-            .person {
-                position: absolute;
-                width: 290px;
-                height: 190px;
-                margin-bottom: 70px;
-                border-radius: 5px;
-            }
-        }
-        .title {
-            letter-spacing: 40px;
-            border-bottom: 2px solid #E40037;
-        }
-        .row {
-            .col-md-6 {
-                span {
-                    color: #E40037;
-                    font-weight: bold;
-                }
-                .progress {
-                    position: relative;
-                    height: 20px;
-                    display: flex;
-                    align-items: center;
-                    span {
-                        position: absolute;
-                        color: #000;
-                        font-weight: bold;
-                        letter-spacing: 4px;
-                        left: 10px;
-                    }
-                    .progress-bar {
-                        height: 20px;
-                        background-color: #E40037;
-                        font-weight: bold;
-                        letter-spacing: 4px;
-                        display: flex;
-                    }
-                }
-            }
-            .col-md-3 {
-                background-color: rgba($color: #E40037, $alpha: 0.5);
-                width: 350px;
-                height: 300px;
-                transition: all 500ms ease;
                 position: relative;
-                background-blend-mode: multiply;
-                background-color: rgba($color: #000000, $alpha: 0);
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
                 display: flex;
                 justify-content: center;
-                border-radius: 10px;
-                .nav-link {
-                    .fa-github {
+                align-items: center;
+                &::before {
+                    content: '';
+                    width: 500px;
+                    height: 500px;
+                    border-radius: 50%;
+                    position: absolute;
+                    filter: blur(30px);
+                    border: 17px solid #E40037;
+                }
+                img {
+                    width: 80%;
+                }
+                .person {
+                    position: absolute;
+                    width: 290px;
+                    height: 190px;
+                    margin-bottom: 70px;
+                    border-radius: 5px;
+                }
+            }
+            .title {
+                letter-spacing: 40px;
+                border-bottom: 2px solid #E40037;
+            }
+            .row {
+                .col-md-6 {
+                    span {
                         color: #E40037;
+                        font-weight: bold;
+                    }
+                    .progress {
+                        position: relative;
+                        height: 20px;
+                        display: flex;
+                        align-items: center;
+                        span {
+                            position: absolute;
+                            color: #000;
+                            font-weight: bold;
+                            letter-spacing: 4px;
+                            left: 10px;
+                        }
+                        .progress-bar {
+                            height: 20px;
+                            background-color: #E40037;
+                            font-weight: bold;
+                            letter-spacing: 4px;
+                            display: flex;
+                        }
                     }
                 }
-                &:nth-child(1) {
-                    background-image: url('../img/semena.png');
+                .col-md-3 {
+                    background-color: rgba($color: #E40037, $alpha: 0.5);
+                    width: 350px;
+                    height: 300px;
+                    transition: all 500ms ease;
+                    position: relative;
+                    background-blend-mode: multiply;
+                    background-color: rgba($color: #000000, $alpha: 0);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                    display: flex;
+                    justify-content: center;
+                    border-radius: 10px;
+                    .nav-link {
+                        .fa-github {
+                            color: #E40037;
+                        }
+                    }
+                    &:nth-child(1) {
+                        background-image: url('../img/semena.png');
+                    }
+                    &:nth-child(2) {
+                        background-image: url('../img/panda.png');
+                    }
+                    &:nth-child(3) {
+                        background-image: url('../img/hex.png');
+                    }
+                    &:nth-child(4) {
+                        background-image: url('../img/dashboard.png');
+                    }
+                    &:nth-child(5) {
+                        background-image: url('../img/vhelp.jpg');
+                    }
+                    &:nth-child(6) {
+                        background-image: url('../img/marico.png');
+                    }
+                    &:nth-child(7) {
+                        background-image: url('../img/GLO.png');
+                    }
+                    &:nth-child(8) {
+                        background-image: url('../img/helper.jpg');
+                    }
+                    &:nth-child(9) {
+                        background-image: url('../img/todo.png');
+                    }
+                    &:nth-child(10) {
+                        background-image: url('../img/portfolio.png');
+                    }
+                    &:nth-child(11) {
+                        background-image: url('../img/hyperdrop.jpg');
+                    }
+                    &:nth-child(12) {
+                        background-image: url('../img/quest.png');
+                    }
+                    &:nth-child(13) {
+                        background-image: url('../img/bot.jpg');
+                    }
+                    .content {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        bottom: 0;
+                        right: 0;
+                        left: 0;
+                        display: none;
+                        .btn {
+                            background-color: #E40037;
+                            color: #fff;
+                            font-weight: bold;
+                            width: 50%;
+                        }
+                        .content-title {
+                            border-top: 2px solid #E40037;
+                            text-align: center;
+                            color: #E40037;
+                            font-weight: bold;
+                        }
+                    }
+                    &:hover {
+                        background-color: rgba($color: #000000, $alpha: 0.4);
+                        transform: scale(1.05);
+                        .content {
+                            display: block;
+                        }
+                    }
                 }
-                &:nth-child(2) {
-                    background-image: url('../img/panda.png');
-                }
-                &:nth-child(3) {
-                    background-image: url('../img/hex.png');
-                }
-                &:nth-child(4) {
-                    background-image: url('../img/dashboard.png');
-                }
-                &:nth-child(5) {
-                    background-image: url('../img/vhelp.jpg');
-                }
-                &:nth-child(6) {
-                    background-image: url('../img/marico.png');
-                }
-                &:nth-child(7) {
-                    background-image: url('../img/GLO.png');
-                }
-                &:nth-child(8) {
-                    background-image: url('../img/helper.jpg');
-                }
-                &:nth-child(9) {
-                    background-image: url('../img/todo.png');
-                }
-                &:nth-child(10) {
-                    background-image: url('../img/portfolio.png');
-                }
-                &:nth-child(11) {
-                    background-image: url('../img/hyperdrop.jpg');
-                }
-                &:nth-child(12) {
-                    background-image: url('../img/quest.png');
-                }
-                &:nth-child(13) {
-                    background-image: url('../img/bot.jpg');
-                }
-                .content {
-                    position: absolute;
-                    width: 100%;
-                    height: 100%;
-                    top: 0;
-                    bottom: 0;
-                    right: 0;
-                    left: 0;
-                    display: none;
-                    .btn {
+                .col-md-2 {
+                    button {
                         background-color: #E40037;
                         color: #fff;
                         font-weight: bold;
-                        width: 50%;
-                    }
-                    .content-title {
-                        border-top: 2px solid #E40037;
-                        text-align: center;
-                        color: #E40037;
-                        font-weight: bold;
-                    }
-                }
-                &:hover {
-                    background-color: rgba($color: #000000, $alpha: 0.4);
-                    transform: scale(1.05);
-                    .content {
-                        display: block;
-                    }
-                }
-            }
-            .col-md-2 {
-                button {
-                    background-color: #E40037;
-                    color: #fff;
-                    font-weight: bold;
-                    width: 100%;
-                    transition: all 500ms ease;
-                    margin-bottom: 10px;
-                    &:hover {
-                        transform: scale(1.1);
+                        width: 100%;
+                        transition: all 500ms ease;
+                        margin-bottom: 10px;
+                        &:hover {
+                            transform: scale(1.1);
+                        }
                     }
                 }
             }
         }
-    }
-    footer {
-        .navbar-brand {
-            color: #FF003D;
-            letter-spacing: 4px;
-        }
-        i {
-            color: #E40037;
+        footer {
+            .navbar-brand {
+                color: #FF003D;
+                letter-spacing: 4px;
+            }
+            i {
+                color: #E40037;
+            }
         }
     }
 }
