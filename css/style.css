@@ -69,6 +69,11 @@ body .wrapper .navbar .container ul li {
   margin-left: 10px;
   margin-right: 10px;
 }
+body .wrapper .navbar .container form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 body .wrapper .navbar .container form img {
   cursor: pointer;
   transition: all 500ms ease;
@@ -92,8 +97,6 @@ body .wrapper .container .circle-main::before {
   height: 500px;
   border-radius: 50%;
   position: absolute;
-  filter: blur(30px);
-  border: 17px solid #E40037;
 }
 body .wrapper .container .circle-main img {
   width: 80%;

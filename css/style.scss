@@ -73,6 +73,9 @@ body {
                     }
                 }
                 form {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     img {
                         cursor: pointer;
                         transition: all 500ms ease;
@@ -99,8 +102,6 @@ body {
                     height: 500px;
                     border-radius: 50%;
                     position: absolute;
-                    filter: blur(30px);
-                    border: 17px solid #E40037;
                 }
                 img {
                     width: 80%;
