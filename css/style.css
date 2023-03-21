@@ -7,6 +7,10 @@
   }
 }
 
+.theme {
+  cursor: pointer;
+}
+
 .wrapper-light {
     background: #fff;
     color: #000;
