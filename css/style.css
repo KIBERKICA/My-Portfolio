@@ -7,6 +7,16 @@
   }
 }
 
+.wrapper-light {
+    background: #fff;
+    color: #000;
+}
+
+.wrapper-light a {
+  color: #000;
+}
+  
+
 body {
   overflow: overlay;
   width: 100%;
