@@ -63,6 +63,9 @@ body {
                         }
                     }
                 }
+                .theme {
+                    cursor: pointer;
+                }
                 .navbar-brand {
                     color: #FF003D;
                 }
@@ -115,7 +118,7 @@ body {
                 }
             }
             .title {
-                letter-spacing: 40px;
+                letter-spacing: 10px;
                 border-bottom: 2px solid #E40037;
             }
             .row {
@@ -255,49 +258,6 @@ body {
             }
             i {
                 color: #E40037;
-            }
-        }
-    }
-}
-
-@media (max-width: 767px) {
-    .wrapper {
-        .container {
-            .circle-main {
-                width: 400px;
-                height: 400px;
-                &:before {
-                    width: 400px;
-                    height: 400px;
-                }
-                .person {
-                    width: 223px;
-                    height: 144px;
-                    margin-top: 10px;
-                }
-            }
-            .title {
-                letter-spacing: 25px;
-            }
-        }
-    }
-}
-
-@media (max-width: 470px) {
-    .wrapper {
-        .container {
-            .circle-main {
-                width: 350px;
-                height: 350px;
-                &::before {
-                    width: 350px;
-                    height: 350px;
-                }
-                .person {
-                    width: 194px;
-                    height: 123px;
-                    margin-top: 19px;
-                }
             }
         }
     }
